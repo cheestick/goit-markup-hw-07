@@ -1,71 +1,51 @@
 :root {
-  --common-font: Roboto, sans-serif;
-  --logo-font: Raleway, sans-serif;
-
-  --main-bg-color: #ffffff;
-  --section-bg-color: #f5f4fa;
-  --footer-bg-color: #212121;
-  --blank-bg-color: #2f303a;
-  --border-separator-color: #ececec;
-  --interactive-element-color: #2196f3;
-  --button-color: #2196f3;
-  --current-page-color: #2196f3;
-  --button-filter-color: #f5f4fa;
-
-  --logo-font-color: #2196f3;
-  --logo-font-black: #000000;
-  --logo-font-white: #ffffff;
-  --lightondark-text-color: #ffffff;
-  --main-heading-color: #212121;
-  --nav-color: #212121;
-  --main-text-color: #757575;
-  --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --card-border-color: #eeeeee;
-
-  --hero-bg-color: #c4c4c4;
-  --hero-bg-overlay-color: rgba(47, 48, 58, 0.4);
-
-  --svg-inactive-fill: #afb1b8;
-  --svg-active-fill: #2196f3;
-
-  --hero-button-color: #2196f3;
-  --hero-button-active-color: #188ce8;
-  --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --features-preview-bg-color: #f5f4fa;
-
-  --teammate-social-link-inactive-bg: #ffffff;
-  --teammate-social-link-active-bg: #2196f3;
-  --teammate-social-link-logo-fill: #afb1b8;
-  --teammate-social-link-logo-active: #ffffff;
-
-  --footer-social-link-inactive-bg: rgba(255, 255, 255, 0.1);
-  --footer-social-link-active-bg: #2196f3;
-  --footer-social-link-fill: #ffffff;
-
-  --filter-button-selected-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  --portfolio-card-hover-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  --transition-time: 250ms;
-  --transition-curve: cubic-bezier(0.4, 0, 0.2, 1);
-
-  --transition-default: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  /* $common-font: Roboto, sans-serif; */
+  /* $logo-font: Raleway, sans-serif; */
+  /* --main-bg-color: #ffffff; */
+  /* --section-bg-color: #f5f4fa; */
+  /* --button-filter-color: #f5f4fa; */
+  /* --features-preview-bg-color: #f5f4fa; */
+  /* --footer-bg-color: #212121; */
+  /* !--blank-bg-color: #2f303a; */
+  /* --border-separator-color: #ececec; */
+  /* --interactive-element-color: #2196f3; */
+  /* --button-color: #2196f3; */
+  /* --current-page-color: #2196f3; */
+  /* --svg-active-fill: #2196f3; */
+  /* --hero-button-color: #2196f3; */
+  /* --hero-button-active-color: #188ce8; */
+  /* $color-dark: #000000; */
+  /* $color-light: #ffffff; */
+  /* --main-heading-color: #212121; */
+  /* --nav-color: #212121; */
+  /* --main-text-color: #757575; */
+  /* --teammate-social-link-active-bg: #2196f3; */
+  /* --footer-social-link-inactive-bg: rgba(255, 255, 255, 0.1); */
+  /* --footer-social-link-active-bg: #2196f3; */
+  /* $transition-time: 250ms; */
+  /* $transition-curve: cubic-bezier(0.4, 0, 0.2, 1); */
+  /* $transition-default: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* $button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  /* --footer-contacts-color: rgba(255, 255, 255, 0.6); */
+  /* --card-border-color: #eeeeee; */
+  /* --hero-bg-color: #c4c4c4; */
+  /* --hero-bg-overlay-color: rgba(47, 48, 58, 0.4); */
+  /* --svg-inactive-fill: #afb1b8; */
+  /* --teammate-social-link-logo-fill: #afb1b8; */
+  /* --teammate-social-link-inactive-bg: #ffffff; */
+  /* --teammate-social-link-logo-active: #ffffff; */
+  /* --footer-social-link-fill: #ffffff; */
+  /* --filter-button-selected-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
+  /* --portfolio-card-hover-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 /* general adaptation to the design (common properties)*/
 body {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  font-family: var(--common-font);
+  background-color: $primary-bg-color;
+  color: $text-color;
+  font-family: $common-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -73,11 +53,11 @@ body {
 }
 
 .page-footer {
-  background-color: var(--footer-bg-color);
+  background-color: $footer-bg-color;
 }
 
 .current-page {
-  color: var(--current-page-color);
+  color: $accent-color;
 }
 
 .list-reset {
@@ -96,7 +76,7 @@ body {
 }
 
 .page-header {
-  border-bottom: 1px solid var(--border-separator-color);
+  border-bottom: 1px solid $separator-color;
 }
 
 /* container. centering main content*/
@@ -117,19 +97,19 @@ body {
 /* logotype */
 .logo,
 .logo:visited {
-  font-family: var(--logo-font);
+  font-family: $logo-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: inherit;
-  color: var(--logo-font-black);
+  color: $color-dark;
 }
 
 .logo > .web {
-  color: var(--logo-font-color);
+  color: $accent-color;
 }
 .address > .logo {
-  color: var(--logo-font-white);
+  color: $color-light;
 }
 
 .navigation .logo {
@@ -160,7 +140,7 @@ body {
 }
 
 .pages-list .link {
-  color: var(--nav-color);
+  color: $primary-font-color;
 }
 
 .page-header .contacts-list {
@@ -171,7 +151,7 @@ body {
 .contacts-list > .item > .link {
   display: flex;
   align-items: center;
-  color: var(--main-text-color);
+  color: $text-color;
   line-height: inherit;
 }
 
@@ -181,7 +161,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color var(--transition-time) var(--transition-curve);
+  transition: color $transition-defaults;
 }
 
 .page-header .pages-list > .item:not(:last-child),
@@ -193,13 +173,13 @@ body {
 .pages-list .link:focus,
 .contacts-list .link:hover,
 .contacts-list .link:focus {
-  color: var(--interactive-element-color);
+  color: $accent-color;
   outline: transparent;
 }
 
 .link.current-page {
   position: relative;
-  color: var(--interactive-element-color);
+  color: $accent-color;
 }
 
 .current-page::after {
@@ -208,7 +188,7 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--interactive-element-color);
+  background-color: $accent-color;
   position: absolute;
   bottom: 0;
 }
@@ -222,10 +202,10 @@ body {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  background-color: var(--hero-bg-color);
+  background-color: $hero-bg-color;
   background-image: linear-gradient(
-      var(--hero-bg-overlay-color),
-      var(--hero-bg-overlay-color)
+      $hero-bg-overlay-color,
+      $hero-bg-overlay-color
     ),
     url('../images/hero/optimized/hero-bg-o.jpg');
   background-repeat: no-repeat;
@@ -245,7 +225,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 
-  color: var(--lightondark-text-color);
+  color: $color-light;
 }
 
 .hero .button-order,
@@ -254,16 +234,16 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--lightondark-text-color);
-  background-color: var(--button-color);
-  transition: background-color var(--transition-time) var(--transition-curve);
+  color: $color-light;
+  background-color: $accent-color;
+  transition: background-color $transition-defaults;
 }
 
 .hero .button-order:hover,
 .hero .button-order:focus,
 .subscribe__button:hover,
 .subscribe__button:focus {
-  background-color: var(--hero-button-active-color);
+  background-color: $button-hover-color;
 }
 
 .btn {
@@ -271,8 +251,8 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--interactive-element-color);
+  box-shadow: $button-shadow;
+  background-color: $accent-color;
 }
 
 /* features */
@@ -301,7 +281,7 @@ body {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: var(--features-preview-bg-color);
+  background-color: $secondary-bg-color;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -333,7 +313,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--main-heading-color);
+  color: $primary-font-color;
 }
 
 /* what do we do (directions) and team common styles */
@@ -347,7 +327,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  color: var(--main-heading-color);
+  color: $primary-font-color;
 }
 
 .directions-heading {
@@ -392,7 +372,7 @@ h3.overlay {
 
 /* our team */
 .team {
-  background-color: var(--section-bg-color);
+  background-color: $secondary-bg-color;
 }
 
 .team-heading {
@@ -408,7 +388,7 @@ h3.overlay {
 
 .teammates-list > .item {
   max-width: 270px;
-  background: var(--main-bg-color);
+  background: $primary-bg-color;
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
@@ -430,7 +410,7 @@ h3.overlay {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--main-heading-color);
+  color: $primary-font-color;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -463,7 +443,7 @@ h3.overlay {
 
 .clients-list {
   display: flex;
-  color: var(--svg-inactive-fill);
+  color: $fill-dark;
 }
 
 .icon-wrapper:not(:last-child) {
@@ -475,28 +455,28 @@ h3.overlay {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--svg-inactive-fill);
+  border: 1px solid $fill-dark;
   border-radius: 4px;
-  transition: border-color var(--transition-time) var(--transition-curve);
+  transition: border-color $transition-defaults;
 }
 
 .client-icon:hover,
 .client-icon:focus {
-  border-color: var(--svg-active-fill);
+  border-color: $accent-color;
   outline: transparent;
 }
 
 .client-icon:hover .client-logo,
 .client-icon:focus .client-logo {
-  fill: var(--svg-active-fill);
+  fill: $accent-color;
 }
 
 .client-logo {
-  fill: var(--teammate-social-link-logo-fill);
+  fill: $fill-dark;
   align-self: center;
   margin-right: auto;
   margin-left: auto;
-  transition: fill var(--transition-time) var(--transition-curve);
+  transition: fill $transition-defaults;
 }
 
 /* footer address */
@@ -520,7 +500,7 @@ h3.overlay {
 }
 
 .address > .postal {
-  color: var(--lightondark-text-color);
+  color: $color-light;
   margin: 0;
   margin-bottom: 9px;
 }
@@ -533,7 +513,7 @@ h3.overlay {
 .address .tel:visited,
 .address .email,
 .address .email:visited {
-  color: var(--footer-contacts-color);
+  color: $footer-contacts-color;
 }
 
 /* social networks */
@@ -551,7 +531,7 @@ h3.overlay {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--logo-font-white);
+  color: $color-light;
 }
 
 .social-networks {
@@ -568,14 +548,14 @@ h3.overlay {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--footer-social-link-inactive-bg);
-  color: var(--footer-social-link-fill);
-  transition: background-color var(--transition-time) var(--transition-curve);
+  background-color: $footer-social-link-bg;
+  color: $fill-light;
+  transition: background-color $transition-defaults;
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--footer-social-link-active-bg);
+  background-color: $accent-color;
 }
 
 .icon-social-network {
@@ -608,7 +588,7 @@ h3.overlay {
   border-radius: 4px;
   background-color: transparent;
 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: $button-shadow;
 }
 
 .subscribe__button {
@@ -635,7 +615,7 @@ h3.overlay {
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--transition-time) var(--transition-curve);
+  transition: opacity $transition-defaults;
 }
 
 .modal-backdrop.is-hidden {
@@ -675,7 +655,7 @@ h3.overlay {
 
 .close-modal:hover,
 .close-modal:focus {
-  fill: var(--interactive-element-color);
+  fill: $accent-color;
 }
 
 .order-form {
@@ -692,7 +672,7 @@ h3.overlay {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--nav-color);
+  color: $primary-font-color;
 }
 
 .order-form__label {
@@ -753,12 +733,12 @@ h3.overlay {
 
 .order-form__input:focus,
 .order-form__user-comment:focus {
-  border-color: var(--interactive-element-color);
+  border-color: $accent-color;
   outline: transparent;
 }
 
 .order-form__input:focus + .order-form__input-icon {
-  fill: var(--interactive-element-color);
+  fill: $accent-color;
 }
 
 .order-form__user-policy {
@@ -798,13 +778,13 @@ h3.overlay {
 .user-policy__link:hover,
 .user-policy__link:visited {
   text-decoration: underline;
-  color: var(--interactive-element-color);
+  color: $accent-color;
 }
 
 .order-form__submit {
   padding: 10px 55px;
-  background-color: var(--interactive-element-color);
-  color: var(--lightondark-text-color);
+  background-color: $accent-color;
+  color: $color-light;
 
   align-self: center;
   font-weight: 700;
@@ -817,7 +797,7 @@ h3.overlay {
 
 .order-form__submit:hover,
 .order-form__submit:focus {
-  background-color: var(--hero-button-active-color);
+  background-color: $button-hover-color;
 }
 
 /* PORTFOLIO page styles */
@@ -844,26 +824,24 @@ h3.overlay {
   border-radius: 4px;
   border-style: solid;
   border-color: transparent;
-  transition: background-color var(--transition-time) var(--transition-curve),
-    color var(--transition-time) var(--transition-curve),
-    box-shadow var(--transition-time) var(--transition-curve);
+  transition: background-color $transition-defaults, color $transition-defaults,
+    box-shadow $transition-defaults;
 }
 
 .filter-list .button-filter {
-  background-color: var(--button-filter-color);
+  background-color: $secondary-bg-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--nav-color);
+  color: $primary-font-color;
 }
 .button-filter.selected-filter,
 .button-cursor:hover,
 .button-cursor:focus {
-  background-color: var(--interactive-element-color);
-  color: var(--lightondark-text-color);
+  background-color: $accent-color;
+  color: $color-light;
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: $shadow-selected;
   outline: transparent;
 }
 
@@ -889,7 +867,7 @@ h3.overlay {
 
 .card > .link:hover,
 .card > .link:focus {
-  box-shadow: var(--portfolio-card-hover-shadow);
+  box-shadow: $shadow-hover;
   outline: transparent;
 }
 
@@ -903,7 +881,7 @@ h3.overlay {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border: 1px solid var(--card-border-color);
+  border: 1px solid $card-border-color;
   border-top: none;
 }
 
@@ -916,7 +894,7 @@ h3.overlay {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  color: var(--main-heading-color);
+  color: $primary-font-color;
 }
 
 .card .card-type {
@@ -951,9 +929,79 @@ div.overlay::before {
   top: 0;
   left: 0;
   transform: translateY(100%);
-  transition: transform var(--transition-time) var(--transition-curve);
+  transition: transform $transition-defaults;
 }
 
 .card:hover div.overlay::before {
   transform: translateY(0);
+}
+
+/* //////////////////////// */
+/* svg.css */
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.logo-1 {
+  width: 45px;
+  height: 50px;
+}
+
+.logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-3 {
+  width: 41px;
+  height: 43px;
+}
+
+.logo-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-6 {
+  width: 88px;
+  height: 45px;
+}
+
+.icon-social-network {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.card-description .icon-social-network {
+  fill: $fill-dark;
+  transition: fill $transition-defaults;
+}
+
+.card-description .social-link:hover > .icon-social-network,
+.card-description .social-link:focus > .icon-social-network {
+  fill: $fill-light;
+}
+
+.icon-close-x {
+  display: block;
+  margin: auto;
+  width: 11px;
+  height: 11px;
 }

@@ -50,13 +50,13 @@
 }
 
 .card-description .icon-social-network {
-  fill: var(--teammate-social-link-logo-fill);
-  transition: fill var(--transition-time) var(--transition-curve);
+  fill: $fill-dark;
+  transition: fill $transition-defaults;
 }
 
 .card-description .social-link:hover > .icon-social-network,
 .card-description .social-link:focus > .icon-social-network {
-  fill: var(--teammate-social-link-logo-active);
+  fill: $fill-light;
 }
 
 .icon-close-x {
