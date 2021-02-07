@@ -463,10 +463,10 @@
     </footer>
     
     <!-- Modal window -->
-    <div class="modal-backdrop is-hidden" data-modal>
-      <div class="modal-window">
-          <button class="close-modal" data-modal-close>
-            <svg class="icon-close-x">
+    <div class="backdrop backdrop--hidden" data-modal>
+      <div class="modal__window">
+          <button class="modal__close" data-modal-close>
+            <svg class="modal__icon-close">
                   <use href="./images/svg/icons-sprite.svg#icon-close-x"></use>
             </svg>
           </button>
@@ -505,17 +505,17 @@
              class="order-form__user-comment"></textarea>
 
             <label class="order-form__user-policy">
-            <input type="checkbox" name="user-policy" class="form-order__is-policy visually-hidden" >
+            <input type="checkbox" name="user-policy" class="order-form__is-policy visually-hidden" >
             <span>Соглашаюсь с рассылкой и принимаю</span> <a href="" class="link-reset user-policy__link">Условия договора</a>
-            <svg class="form-order__is-policy--unchecked">
+            <svg class="order-form__is-policy--unchecked">
               <use href="./images/svg/icons-sprite.svg#icon-unchecked-checkbox"></use>
             </svg> 
-            <svg class="form-order__is-policy--checked">
+            <svg class="order-form__is-policy--checked">
               <use href="./images/svg/icons-sprite.svg#icon-checked-checkbox"></use>
             </svg> 
             </label>
                       
-            <button type="submit" class="btn order-form__submit">Отправить</button>
+            <button type="submit" class="order-form__submit">Отправить</button>
           </form>
       </div>
     </div>

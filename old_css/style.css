@@ -607,7 +607,7 @@ h3.overlay {
 }
 
 /* MODAL WINDOW */
-.modal-backdrop {
+.backdrop {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -619,12 +619,12 @@ h3.overlay {
   transition: opacity $transition-defaults;
 }
 
-.modal-backdrop.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-window {
+.modal__window {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -640,7 +640,7 @@ h3.overlay {
   border-radius: 4px;
 }
 
-.close-modal {
+.modal__close {
   position: absolute;
   padding: 0;
   right: 8px;
@@ -654,8 +654,8 @@ h3.overlay {
   cursor: pointer;
 }
 
-.close-modal:hover,
-.close-modal:focus {
+.modal__close:hover,
+.modal__close:focus {
   fill: $accent-color;
 }
 
