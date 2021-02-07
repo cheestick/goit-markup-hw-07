@@ -23,27 +23,27 @@
             lang="en"
             ><span class="web">Web</span>Studio</a
           >
-          <ul class="pages-list list-reset">
+          <ul class="list-reset navigation__pages-list">
             <li class="item">
-              <a class="link link-reset" href="../index.html">Студия</a>
+              <a class="link-reset page-header__link" href="../index.html">
+                Студия
+              </a>
             </li>
             <li class="item">
               <a
-                class="link link-reset current-page"
-                href="./portfolio.html"
+                class="link-reset page-header__link  current-page"
+                href="./pages/portfolio.html"
                 target="_blank"
-                >Портфолио
-                <div class="underline"></div>
-                </a>
-            </li>
-            <li class="item">
-              <a class="link link-reset" href="">Контакты</a>
-            </li>
+                >Портфолио</a
+              >
+            </li class="item">
+            <li><a class="link-reset page-header__link " href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts-list list-reset">
+
+        <ul class="navigation__contacts-list list-reset">
           <li class="item">
-            <a class="link link-reset"
+            <a class="link-reset page-header__link"
               href="mailto:info@devstudio.com"
               lang="en">
               <svg class="icon mail-icon">
@@ -53,14 +53,15 @@
             </a>
           </li>
           <li class="item">
-            <a class="link link-reset" href="tel:+380961111111">
+            <a class="link-reset page-header__link" href="tel:+380961111111">
               <svg class="icon phone-icon">
                 <use href="../images/svg/icons-sprite.svg#icon-smartphone"/>
               </svg>
               <span>+38 096 111 11 11</span>
             </a>
           </li>
-        </ul>      </div>
+        </ul>
+      </div>
     </header>
     <!-- main portfolio examles and filters container -->
     <main class="main">
@@ -271,7 +272,7 @@
       </section>
     </main>
     <!-- aux information and adress -->
-    <footer class="page-footer">
+        <footer class="page-footer">
       <div class="container">
         <address class="address">
           <a
@@ -281,67 +282,58 @@
             lang="en"
             ><span class="web">Web</span>Studio</a
           >
-          <p class="postal">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="contacts-list list-reset">
-            <li class="item">
-              <a
-                class="email link-reset"
-                href="mailto:info@example.com"
-                lang="en"
+          <p class="address__postal">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="adress__contacts list-reset">
+            <li class="contacts__item">
+              <a class="contacts__email link-reset" href="mailto:info@example.com" lang="en"
                 >info@example.com</a
               >
             </li>
-            <li class="item">
-              <a class="tel link-reset" href="tel:+380991111111"
+            <li class="contacts__item">
+              <a class="contacts__tel link-reset" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
           </ul>
         </address>
-        <div class="join-container">
-          <h2 class="join-heading">присоединяйтесь</h2>
-          <ul class="list-reset social-networks">
-            <li class="item">
-              <a href="" class="link-reset social-link">
-                <svg class="icon-social-network">
-                  <use
-                    href="../images/svg/icons-sprite.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link-reset social-link">
-                <svg class="icon-social-network">
+        <div class="join__container">
+          <h2 class="join__heading">присоединяйтесь</h2>
+          <ul class="list-reset social-network__list">
+            <li class="social-network__item">
+              <a href="" class="link-reset social-network__link">
+              <svg class="social-network__icon social-network--light-icon">
+                <use href="../images/svg/icons-sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+            <li class="social-network__item">
+              <a href="" class="link-reset social-network__link">
+                <svg class="social-network__icon social-network--light-icon">
                   <use href="../images/svg/icons-sprite.svg#icon-twitter"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link-reset social-link">
-                <svg class="icon-social-network">
-                  <use
-                    href="../images/svg/icons-sprite.svg#icon-facebook"
-                  ></use>
+            </a>
+          </li>
+            <li class="social-network__item">
+              <a href="" class="link-reset social-network__link">
+                <svg class="social-network__icon social-network--light-icon">
+                  <use href="../images/svg/icons-sprite.svg#icon-facebook"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link-reset social-link">
-                <svg class="icon-social-network">
-                  <use
-                    href="../images/svg/icons-sprite.svg#icon-linkedin"
-                  ></use>
+            </a>
+          </li>
+            <li class="social-network__item">
+              <a href="" class="link-reset social-network__link">
+                <svg class="social-network__icon social-network--light-icon">
+                  <use href="../images/svg/icons-sprite.svg#icon-linkedin"></use>
                 </svg>
-              </a>
-            </li>
-          </ul>
+            </a>
+          </li>
+          </ul>  
         </div>
         <div class="subscribe">
           <p class="subscribe__text">Подпишитесь на рассылку</p>
-          <form action="" autocomplete="off"  class="subscribe__form">
+          <form action="" autocomplete="off" class="subscribe__form">
             <input type="email" name="email" placeholder="E-mail" class="subscribe__email">
-            <button type="button" class="btn subscribe__button">
+            <button type="button" class=" subscribe__button">
               Подписаться
               <svg class="subscribe__icon">
                 <use href="../images/svg/icons-sprite.svg#icon-send"></use>
