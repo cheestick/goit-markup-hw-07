@@ -350,6 +350,7 @@ body {
   background-color: #2196f3;
   border: 1px solid transparent;
   border-radius: 4px;
+  cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -685,6 +686,10 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-network--light-icon {
+  fill: #ffffff;
+}
+
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,5 +793,101 @@ body {
   margin: auto;
   width: 11px;
   height: 11px;
+}
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #212121;
+}
+
+.page-footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.address {
+  font-style: normal;
+  margin-right: 70px;
+}
+
+.address .logo {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.address__postal {
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts__tel, .contacts__tel:visited, .contacts__email, .contacts__email:visited {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join__container {
+  margin-top: 12px;
+  margin-right: 93px;
+}
+
+.subscribe__text, .join__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe {
+  margin-top: 12px;
+}
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe__email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe__button {
+  padding: 10px 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

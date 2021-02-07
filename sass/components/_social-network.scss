@@ -39,4 +39,8 @@
     fill: $fill-dark;
     transition: fill $transition-defaults;
   }
+
+  &--light-icon {
+    fill: $fill-light;
+  }
 }
