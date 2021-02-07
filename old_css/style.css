@@ -321,6 +321,7 @@ body {
   padding-bottom: 94px;
 }
 
+/* .section__heading in sass */
 .directions-heading,
 .team-heading,
 .clients-heading {
@@ -337,8 +338,6 @@ body {
 }
 .directions-list {
   display: flex;
-  margin: 0;
-  padding: 0;
   font-size: 0;
 }
 

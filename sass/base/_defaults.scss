@@ -55,6 +55,9 @@ body {
   padding-bottom: 94px;
 }
 
-.directions-section {
-  padding-top: 0;
+.section__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $primary-font-color;
 }
