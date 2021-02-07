@@ -49,15 +49,15 @@
   fill: #ffffff;
 }
 
-.card-description .icon-social-network {
-  fill: $fill-dark;
-  transition: fill $transition-defaults;
-}
+// .card-description .icon-social-network {
+//   fill: $fill-dark;
+//   transition: fill $transition-defaults;
+// }
 
-.card-description .social-link:hover > .icon-social-network,
-.card-description .social-link:focus > .icon-social-network {
-  fill: $fill-light;
-}
+// .card-description .social-link:hover > .icon-social-network,
+// .card-description .social-link:focus > .icon-social-network {
+//   fill: $fill-light;
+// }
 
 .icon-close-x {
   display: block;
