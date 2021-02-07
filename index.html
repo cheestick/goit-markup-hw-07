@@ -23,26 +23,27 @@
             lang="en"
             ><span class="web">Web</span>Studio</a
           >
-          <ul class="pages-list list-reset">
+          <ul class="list-reset navigation__pages-list">
             <li class="item">
-              <a class="link link-reset current-page" href="./index.html">
+              <a class="link-reset page-header__link  current-page" href="./index.html">
                 Студия
               </a>
             </li>
             <li class="item">
               <a
-                class="link link-reset"
+                class="link-reset page-header__link "
                 href="./pages/portfolio.html"
                 target="_blank"
                 >Портфолио</a
               >
             </li class="item">
-            <li><a class="link link-reset" href="">Контакты</a></li>
+            <li><a class="link-reset page-header__link " href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts-list list-reset">
+
+        <ul class="navigation__contacts-list list-reset">
           <li class="item">
-            <a class="link link-reset"
+            <a class="link-reset page-header__link"
               href="mailto:info@devstudio.com"
               lang="en">
               <svg class="icon mail-icon">
@@ -52,7 +53,7 @@
             </a>
           </li>
           <li class="item">
-            <a class="link link-reset" href="tel:+380961111111">
+            <a class="link-reset page-header__link" href="tel:+380961111111">
               <svg class="icon phone-icon">
                 <use href="./images/svg/icons-sprite.svg#icon-smartphone"/>
               </svg>
@@ -67,9 +68,11 @@
       <!-- hero -->
       <section class="hero">
         <div class="container">
-          <h1>Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
+          <!-- "btn button-order button-cursor" -->
           <button
-            class="btn button-order button-cursor"
+          
+            class="button"
             type="button"
             name="service-order"
             data-modal-open
@@ -83,30 +86,30 @@
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features-list list-reset">
-            <li class="item icon-antenna">
-              <h3 class="feature-heading">Внимание к деталям</h3>
-              <p class="feature-description">
+            <li class="features-list__item icon-antenna">
+              <h3 class="features-list__heading">Внимание к деталям</h3>
+              <p class="features-list__description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item icon-clock">
-              <h3 class="feature-heading">Пунктуальность</h3>
-              <p class="feature-description">
+            <li class="features-list__item icon-clock">
+              <h3 class="features-list__heading">Пунктуальность</h3>
+              <p class="features-list__description">
                 Задача организации, в особенности же рамки и место обучения кадров
                 влечет за собой.
               </p>
             </li>
-            <li class="item icon-diagram">
-              <h3 class="feature-heading">Планирование</h3>
-              <p class="feature-description">
+            <li class="features-list__item icon-diagram">
+              <h3 class="features-list__heading">Планирование</h3>
+              <p class="features-list__description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item icon-astronaut">
-              <h3 class="feature-heading">Современные технологии</h3>
-              <p class="feature-description">
+            <li class="features-list__item icon-astronaut">
+              <h3 class="features-list__heading">Современные технологии</h3>
+              <p class="features-list__description">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -465,7 +468,7 @@
             
             <label  class="order-form__label">Имя</label>
             <div class="order-form__input-wrapper">
-              <input type="text" name="user-name" id="user-name" autofocus
+              <input type="text" name="user-name" id="user-name"
               class="order-form__input">
               <svg class="order-form__input-icon">
                 <use href="./images/svg/icons-sprite.svg#icon-person"></use>

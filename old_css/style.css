@@ -75,10 +75,6 @@ body {
   color: inherit;
 }
 
-.page-header {
-  border-bottom: 1px solid $separator-color;
-}
-
 /* container. centering main content*/
 .container {
   width: 1200px;
@@ -86,6 +82,10 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-header {
+  border-bottom: 1px solid $separator-color;
 }
 
 .page-header > .container {
@@ -108,22 +108,21 @@ body {
 .logo > .web {
   color: $accent-color;
 }
-.address > .logo {
-  color: $color-light;
-}
 
-.navigation .logo {
-  display: block;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
-  margin-right: 93px;
-}
 /* navigation */
 .navigation {
   display: flex;
   align-items: center;
 }
 
+.navigation .logo {
+  /* display: block;   не нужно т.к. флекс элемент */
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+  margin-right: 93px;
+}
+
+/* .page-header__link */
 .navigation .link,
 .navigation .link:visited,
 .contacts-list .link,
@@ -139,6 +138,7 @@ body {
   display: flex;
 }
 
+/* .page-header__link */
 .pages-list .link {
   color: $primary-font-color;
 }
@@ -483,6 +483,7 @@ h3.overlay {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: $footer-bg-color;
 }
 
 .page-footer > .container {
@@ -497,6 +498,7 @@ h3.overlay {
 .address > .logo {
   display: block;
   margin-bottom: 20px;
+  color: $color-light;
 }
 
 .address > .postal {
