@@ -55,9 +55,12 @@ body {
   padding-bottom: 94px;
 }
 
-.section__heading {
+%section__heading {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: $primary-font-color;
+  text-align: center;
 }

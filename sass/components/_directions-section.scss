@@ -2,9 +2,6 @@
   padding-top: 0;
 
   &__heading {
-    @extend .section__heading;
-    margin: 0;
-    margin-bottom: 50px;
-    text-align: center;
+    @extend %section__heading;
   }
 }

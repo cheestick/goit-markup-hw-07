@@ -433,6 +433,35 @@ h3.overlay {
   outline: transparent;
 }
 
+.social-networks {
+  display: flex;
+}
+
+.social-networks > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $footer-social-link-bg;
+  color: $fill-light;
+  transition: background-color $transition-defaults;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: $accent-color;
+}
+
+.icon-social-network {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* clients section */
 .clients-heading {
   margin-top: 0;
@@ -533,35 +562,6 @@ h3.overlay {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $color-light;
-}
-
-.social-networks {
-  display: flex;
-}
-
-.social-networks > .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: $footer-social-link-bg;
-  color: $fill-light;
-  transition: background-color $transition-defaults;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: $accent-color;
-}
-
-.icon-social-network {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* subscribe request*/
@@ -984,17 +984,20 @@ div.overlay::before {
   height: 45px;
 }
 
+/* cooied to sass*/
 .icon-social-network {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  /* fill: #ffffff; */
 }
 
+/* copied to sass*/
 .card-description .icon-social-network {
   fill: $fill-dark;
   transition: fill $transition-defaults;
 }
 
+/* copied to sass */
 .card-description .social-link:hover > .icon-social-network,
 .card-description .social-link:focus > .icon-social-network {
   fill: $fill-light;
