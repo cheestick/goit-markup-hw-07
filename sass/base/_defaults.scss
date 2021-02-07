@@ -50,9 +50,14 @@ body {
 .features-section,
 .team,
 .clients__section,
-.directions-section {
+.directions-section,
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio {
+  padding-top: 92px;
 }
 
 %section__heading {
